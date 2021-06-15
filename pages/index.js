@@ -53,7 +53,6 @@ export default function Home({ posts, about, projects }) {
       </section>
 
       <section className="RecentProjects">
-        {console.log(projects)}
         <div className="ProjectInitial">
           <h2> 💻 Últimos Projetos </h2>
           <p> Ver Todos → </p>
