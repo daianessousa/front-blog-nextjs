@@ -10,7 +10,11 @@ export default function Post({ post }) {
           </Link>
         </div>
         <div>
-          <img className="ImgPublish" src={post.Pictures[0].url} alt="image" />
+          <img
+            className="ImgPublish"
+            src={post.Pictures[0].url}
+            alt={post.Pictures[0].alternativeText}
+          />
         </div>
         <h2>{post.Title}</h2>
         <p>{post.Content}</p>
@@ -32,7 +36,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: true,
+    fallback: false,
   };
 }
 
