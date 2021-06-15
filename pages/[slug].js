@@ -3,14 +3,20 @@ import Link from 'next/link';
 export default function Post({ post }) {
   return (
     <div>
-      <Link href="/">
-        <a>Go Home</a>
-      </Link>
-      <div>
-        <img src={post.Pictures[0].url} alt="image" />
-      </div>
-      <h2>{post.Title}</h2>
-      <p>{post.Content}</p>
+      <section className="Publish">
+        <div className="ArrowMenu">
+          <Link href="/">
+            <a> ← Voltar </a>
+          </Link>
+        </div>
+        <div>
+          <img className="ImgPublish" src={post.Pictures[0].url} alt="image" />
+        </div>
+        <h2>{post.Title}</h2>
+        <p>{post.Content}</p>
+        <h5>Publicado em: {post.Date}</h5>
+        <h5> Autor: {post.User.username}</h5>
+      </section>
     </div>
   );
 }

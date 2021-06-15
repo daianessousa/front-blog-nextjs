@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #ea544a;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -58,4 +62,115 @@ a {
   width: 400px;
   height: 0.15rem;
   background: #88cdff;
+}
+
+.RecentProjects {
+  margin-top: 2rem;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+.ProjectInitial {
+  margin-bottom: 2rem;
+}
+
+.Project {
+  width: 100%;
+}
+
+.PortfolioImg {
+  max-width: 80%;
+}
+
+.DescriptionProject {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Footer {
+  text-align: center;
+  margin: 2rem;
+}
+.Publish {
+  padding: 2rem;
+  max-width: 100%;
+}
+
+.Publish .ImgPublish {
+  max-width: 80%;
+  justify-content: center;
+}
+
+.ArrowMenu {
+  margin-bottom: 1rem;
+}
+/* Medias Query */
+
+@media (min-width: 600px) {
+  .Project {
+    width: 90%;
+  }
+  .PortfolioImg {
+    max-width: 60%;
+  }
+  .DescriptionProject {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Publish {
+    padding: 2rem;
+    max-width: 90%;
+  }
+
+  .Publish .ImgPublish {
+    max-width: 60%;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .Project {
+    width: 70%;
+  }
+  .PortfolioImg {
+    max-width: 50%;
+  }
+  .DescriptionProject {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Publish {
+    padding: 2rem;
+    max-width: 60%;
+  }
+
+  .Publish .ImgPublish {
+    max-width: 40%;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Project {
+    width: 60%;
+  }
+  .PortfolioImg {
+    max-width: 40%;
+  }
+  .DescriptionProject {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Publish {
+    padding: 2rem;
+    max-width: 50%;
+  }
+
+  .Publish .ImgPublish {
+    max-width: 50%;
+    justify-content: center;
+  }
 }
